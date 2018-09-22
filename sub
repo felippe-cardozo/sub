@@ -1,0 +1,6 @@
+#! /usr/bin/env ruby
+require './subtitle_downloader'
+
+path = ARGV[0]
+lang = ARGV[1]
+SubtitleDownloader.new(path: path, lang: lang).download
